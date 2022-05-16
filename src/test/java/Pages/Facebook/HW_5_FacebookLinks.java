@@ -39,6 +39,28 @@ public class HW_5_FacebookLinks extends Commands {
 
     }
 
+
+   public void clickFacebookPay () {
+       clickIt(facebookPayLink);
+   }
+    public void clickOculus () {
+        clickIt(oculusLink);
+    }
+    public void clickPortal () {
+        clickIt(portalLink);
+    }
+    public void clickInstagram () {
+        clickIt(instagramLink);
+    }
+    public void clickBulletin () {
+        clickIt(bulletinLink);
+    }
+
+
+
+
+
+
     public void closeLinks () {
 
         Set<String> allHandles = MyDriver.getDriver().getWindowHandles();
@@ -59,6 +81,16 @@ public class HW_5_FacebookLinks extends Commands {
 
     public WebElement logInBttn () {
         return findWebElement(instagramLoginLocator);
+    }
+
+    public void clickInstagramLogIn () {
+        clickIt(instagramLoginLocator);
+    }
+
+    public boolean isInstagramLogInBtnDisabled () {
+        Commands.switchToSecondWindow();
+        return !isElementEnabled(instagramLoginLocator);
+
     }
 
 
