@@ -1,4 +1,4 @@
-package Tests;
+package Tests.Hotels;
 
 import Pages.Hotels.LandingPage;
 import Web.MyDriver;

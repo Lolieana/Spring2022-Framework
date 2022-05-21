@@ -1,5 +1,6 @@
 package Pages.Darksky;
 
+import Helper.Misc;
 import Pages.Commands;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -24,4 +25,9 @@ public class HW_5_TimeMachineDates extends Commands {
       return getTextOfWebElement(currentDateLocator);
    }
 
-    }
+   public boolean isCurrentDateHighlighted() {
+       return Misc.getCurrentDateAsInt() == Integer.parseInt(getTextOfWebElement(currentDateLocator));
+
+   }
+
+}

@@ -18,6 +18,25 @@ public class Commands {
         return MyDriver.getDriver().findElement(locator);
     }
 
+    // check if the element exists in the dom
+    public boolean isElementExist (By locator) {
+        try {
+            findWebElement(locator);
+        } catch (NoSuchElementException e) {
+            return false;
+        }
+        return true;
+    }
+
+
+
+
+
+     // get title
+    public static String getTitle () {
+        return MyDriver.getDriver().getTitle();
+    }
+
 
     // Create a local method to type in the webElement
     public void type(By locator, String data) {
@@ -85,13 +104,29 @@ public class Commands {
         return element;
     }
 
+    public void scroll () {
+        JavascriptExecutor js =  (JavascriptExecutor) MyDriver.getDriver();
+        js.executeScript("scrollBy(0,800)");
+        Misc.pause(2);
+    }
+
     public void scrollToBottom() {
 
         JavascriptExecutor js = (JavascriptExecutor) MyDriver.getDriver();
         js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
         Misc.pause(2);
     }
-
+   // switch between two windows
+    public static void switchToSecondWindow () {
+        Set<String> allHandles = getAllWindowHandles();
+        String fbWindowHandle = getCurrentWindowHandle();
+        for (String handle : allHandles) {
+            if (!handle.equals(fbWindowHandle)) {
+                MyDriver.getDriver().switchTo().window(handle);
+                break;
+            }
+        }
+    }
 
     // custom methods to switch to a window
     public void switchToWindow(String newHandle) {
@@ -99,12 +134,12 @@ public class Commands {
     }
 
     // custom method to get current window-handle
-    public String getCurrentWindowHandle() {
+    public static String getCurrentWindowHandle() {
         return MyDriver.getDriver().getWindowHandle();
     }
 
     // custom method to get all window-handles
-    public Set<String> getAllWindowHandles() {
+    public static Set<String> getAllWindowHandles() {
         return MyDriver.getDriver().getWindowHandles();
     }
 
