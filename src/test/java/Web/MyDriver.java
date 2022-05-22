@@ -7,6 +7,9 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 
 
 public class MyDriver {
@@ -27,10 +30,31 @@ public class MyDriver {
         }
     }
 
+    public static void launchUrlOnNewWindowWithWait(String url) {
+        System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver");
+        driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.get(url);}
+
     public static void quitWindows() {
 
-        driver.quit();
+       driver.quit();
     }
+
+
+  //  @Before
+//    public static void launchUrlOnNewWindow() {
+//        System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver");
+//        driver = new ChromeDriver();
+//        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//        driver.get("https://www.facebook.com/");
+//    }
+
+   // @After
+   // public static void quitWindows() {
+   //     driver.quit();
+    //}
+
 
     public static WebDriver getDriver() {
 

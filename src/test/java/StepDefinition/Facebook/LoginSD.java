@@ -22,6 +22,31 @@ public class LoginSD {
         MyDriver.launchUrlOnNewWindow("https://www.facebook.com/");
     }
 
+    //    @Given("^I am on (facebook|darksky|hotels) landing page$")
+//    public void openWebPage(String webPageName) {
+//        switch (webPageName) {
+//            case "facebook":
+//                MyDriver.launchUrlOnNewWindow("https://www.facebook.com/");
+//                break;
+//            case "darksky":
+//                MyDriver.launchUrlOnNewWindow("https://www.darksky.net/");
+//                break;
+//            case "hotels":
+//                MyDriver.launchUrlOnNewWindow("https://www.hotels.com/");
+//                break;
+//            default:
+//                System.out.println("Invalid webpage name");
+//        }
+//        /*
+//            I am on facebook landing page
+//
+//            I am on darksky landing page
+//
+//            I am on hotels landing page
+//         */
+//
+//    }
+
 
     @When("^I click on login button$")
     public void clickLoginBtn() {
