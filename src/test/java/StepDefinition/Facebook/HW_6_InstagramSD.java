@@ -18,7 +18,7 @@ public class HW_6_InstagramSD {
 
     @Given("^I am on Facebook home page$")
     public void launchFacebookPage () {
-        MyDriver.launchUrlOnNewWindow("https://www.facebook.com/");
+        MyDriver.launchUrlOnNewWindowWithWait("https://www.facebook.com/");
         Misc.pause(2);
     }
 

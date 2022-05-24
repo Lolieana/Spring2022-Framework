@@ -40,7 +40,7 @@ public class login {
     // Verify user cannot login with empty credentials
     @Test
     public void emptyCredentials() {
-        MyDriver.launchUrlOnNewWindow("https://www.facebook.com/");
+        MyDriver.launchUrlOnNewWindowWithWait("https://www.facebook.com/");
 
         LandingPage landingPage = new LandingPage();
         landingPage.clickLoginButton();

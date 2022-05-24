@@ -2,6 +2,7 @@ Feature: Facebook login
 
 
    # Scenario name
+  @invalidFbLogin
   Scenario: Verify user cannot login with invalid credentials
     # steps (Gherkin steps)
     Given I am on facebook landing page

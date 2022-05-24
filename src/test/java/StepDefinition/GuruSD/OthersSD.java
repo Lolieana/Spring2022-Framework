@@ -12,7 +12,7 @@ public class OthersSD {
 
     @Given("^I am on Guru landing page$")
     public void openGugu() {
-        MyDriver.launchUrlOnNewWindow("https://demo.guru99.com/test/delete_customer.php/delete_customer.php/");
+        MyDriver.launchUrlOnNewWindowWithWait("https://demo.guru99.com/test/delete_customer.php/delete_customer.php/");
     }
 
     @When("I enter the customer id as (.+)")

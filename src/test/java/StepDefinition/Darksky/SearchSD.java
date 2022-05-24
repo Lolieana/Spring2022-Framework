@@ -12,7 +12,7 @@ public class SearchSD {
 
     @Given("I am on darksky landing page")
     public void openDarksky() {
-        MyDriver.launchUrlOnNewWindow("https://www.darksky.net/");
+        MyDriver.launchUrlOnNewWindowWithWait("https://www.darksky.net/");
     }
 
 

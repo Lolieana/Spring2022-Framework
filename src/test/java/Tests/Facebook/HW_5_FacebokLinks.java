@@ -11,7 +11,7 @@ public class HW_5_FacebokLinks {
 
     @Test
     public void testNewWindows () {
-        MyDriver.launchUrlOnNewWindow("https://www.facebook.com/");
+        MyDriver.launchUrlOnNewWindowWithWait("https://www.facebook.com/");
         Pages.Facebook.HW_5_FacebookLinks fb = new Pages.Facebook.HW_5_FacebookLinks();
         fb.clickLinks();
         Misc.pause(2);

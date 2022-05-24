@@ -268,6 +268,17 @@ public class Commands {
         MyDriver.getDriver().switchTo().defaultContent();
     }
 
+    public void selectByVisibleText (By locator, String text) {
+        WebElement element = findWebElement(locator);
+        Select option = new Select(element);
+        option.selectByVisibleText(text);
+
+    }
+
+    public void pressEnterButton (By locator) {
+        findWebElement(locator).sendKeys(Keys.ENTER);
+    }
+
 
 
 

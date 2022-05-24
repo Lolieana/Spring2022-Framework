@@ -19,7 +19,7 @@ public class LandingPage {
      */
     @Test
     public void verifyTimeMachineClickable() {
-        MyDriver.launchUrlOnNewWindow("https://www.darksky.net/");
+        MyDriver.launchUrlOnNewWindowWithWait("https://www.darksky.net/");
 
         Pages.Darksky.LandingPage lpage = new Pages.Darksky.LandingPage();
         Assert.assertTrue(lpage.isTimeMachineButtonEnabled(), "Error");
@@ -28,7 +28,7 @@ public class LandingPage {
 
     @Test
     public void click () {
-        MyDriver.launchUrlOnNewWindow("https://www.darksky.net/");
+        MyDriver.launchUrlOnNewWindowWithWait("https://www.darksky.net/");
         HW_5_TimeMachineDates time = new HW_5_TimeMachineDates();
         time.scrollToBottom();
         time.clickTimeMachineBttn();
