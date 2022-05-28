@@ -25,7 +25,7 @@ public class login_2 {
      */
     @Test
     public void InvalidCredentials() {
-        MyDriver.launchUrlOnNewWindow("https://www.facebook.com/");
+        MyDriver.launchUrlOnNewWindowWithWait("https://www.facebook.com/");
 
         LandingPage landingPage = new LandingPage();
         landingPage.enterLoginEmail("$%^&*(");
@@ -41,7 +41,7 @@ public class login_2 {
     // Verify user cannot login with empty credentials
     @Test
     public void emptyCredentials() {
-        MyDriver.launchUrlOnNewWindow("https://www.facebook.com/");
+        MyDriver.launchUrlOnNewWindowWithWait("https://www.facebook.com/");
 
         LandingPage landingPage = new LandingPage();
         landingPage.clickLoginButton();

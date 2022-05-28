@@ -19,7 +19,7 @@ public class Signup {
     @Test
     public void usePom_2() {
 
-        MyDriver.launchUrlOnNewWindow("https://www.facebook.com/");
+        MyDriver.launchUrlOnNewWindowWithWait("https://www.facebook.com/");
 
         LandingPage lPage = new LandingPage();
         lPage.clickCreateNewAccountBtn();

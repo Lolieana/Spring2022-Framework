@@ -20,7 +20,7 @@ public class HW_6_TimeMachineSD {
 
     @Given("^I am on darksky home page$")
     public void openDarkskyPage () {
-        MyDriver.launchUrlOnNewWindow("https://www.darksky.net/");
+        MyDriver.launchUrlOnNewWindowWithWait("https://www.darksky.net/");
     }
 
     @When("^I scroll down to the bottom of the page$")

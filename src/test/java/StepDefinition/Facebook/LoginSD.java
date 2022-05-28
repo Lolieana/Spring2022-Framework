@@ -19,7 +19,7 @@ public class LoginSD {
     // Glue code
     @Given("^I am on facebook landing page$")
     public void openFacebook() {
-        MyDriver.launchUrlOnNewWindow("https://www.facebook.com/");
+       MyDriver.launchUrlOnNewWindowWithWait("https://www.facebook.com/");
     }
 
     //    @Given("^I am on (facebook|darksky|hotels) landing page$")

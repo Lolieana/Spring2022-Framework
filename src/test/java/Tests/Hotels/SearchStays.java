@@ -10,7 +10,7 @@ public class SearchStays {
 
     @Test
     public void selectDateInCalendar() {
-        MyDriver.launchUrlOnNewWindow("https://www.hotels.com");
+        MyDriver.launchUrlOnNewWindowWithWait("https://www.hotels.com");
 
         LandingPage lpage = new LandingPage();
 
@@ -21,7 +21,7 @@ public class SearchStays {
 
     @Test
     public void selectFromSuggestions() {
-        MyDriver.launchUrlOnNewWindow("https://www.hotels.com");
+        MyDriver.launchUrlOnNewWindowWithWait("https://www.hotels.com");
 
         LandingPage lpage = new LandingPage();
 
@@ -33,7 +33,7 @@ public class SearchStays {
 
     @Test
     public void selectDateInAnyCalendar() {
-        MyDriver.launchUrlOnNewWindow("https://www.hotels.com");
+        MyDriver.launchUrlOnNewWindowWithWait("https://www.hotels.com");
 
         LandingPage lpage = new LandingPage();
 

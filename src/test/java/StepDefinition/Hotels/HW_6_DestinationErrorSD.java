@@ -18,7 +18,7 @@ public class HW_6_DestinationErrorSD {
 
     @Given("^I am on Hotels home page$")
     public void lauchHotelPage () {
-        MyDriver.launchUrlOnNewWindow("https://www.hotels.com/");
+        MyDriver.launchUrlOnNewWindowWithWait("https://www.hotels.com/");
     }
 
     @When("^I Click on search button$")

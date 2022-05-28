@@ -33,7 +33,7 @@ public class MyDriver {
     public static void launchUrlOnNewWindowWithWait(String url) {
         System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver");
         driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+       driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get(url);}
 
     public static void quitWindows() {
@@ -41,14 +41,14 @@ public class MyDriver {
        driver.quit();
     }
 
-
-  //  @Before
-//    public static void launchUrlOnNewWindow() {
-//        System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver");
-//        driver = new ChromeDriver();
-//        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+   // @Before
+  // public static void launchUrlOnNewWindow() {
+   //     System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver");
+   //    driver = new ChromeDriver();
 //        driver.get("https://www.facebook.com/");
-//    }
+    //    driver.get("https://www.hotels.com/");
+    //    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+  // }
 
    // @After
    // public static void quitWindows() {

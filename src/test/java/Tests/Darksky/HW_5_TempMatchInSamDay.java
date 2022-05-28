@@ -15,7 +15,7 @@ public class HW_5_TempMatchInSamDay {
 
     @Test
     public void sameTemp () {
-        MyDriver.launchUrlOnNewWindow("https://www.darksky.net/");
+        MyDriver.launchUrlOnNewWindowWithWait("https://www.darksky.net/");
         Misc.pause(2);
 
         JavascriptExecutor js =  (JavascriptExecutor) MyDriver.getDriver();

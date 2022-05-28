@@ -16,7 +16,7 @@ public class TimeMachine {
      */
     @Test
     public void verifyTimeMachineClickable() {
-        MyDriver.launchUrlOnNewWindow("https://www.darksky.net/");
+        MyDriver.launchUrlOnNewWindowWithWait("https://www.darksky.net/");
 
         LandingPage lpage = new Pages.Darksky.LandingPage();
         Assert.assertTrue(lpage.isTimeMachineButtonEnabled(), "Error");
