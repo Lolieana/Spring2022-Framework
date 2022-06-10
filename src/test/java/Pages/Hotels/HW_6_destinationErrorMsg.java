@@ -21,13 +21,7 @@ public class HW_6_destinationErrorMsg extends Commands {
     By travelersNumAfterClickSearch = By.xpath("//div[@class='uitk-field-label']//span");
 
 
-
-
-
-
-
-
-
+    
 
 
     public void clickOnSearchBtn () {
