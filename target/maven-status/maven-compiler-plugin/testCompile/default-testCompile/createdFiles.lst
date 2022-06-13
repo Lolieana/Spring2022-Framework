@@ -30,3 +30,5 @@ Pages/Hotels/LandingPage.class
 Tests/Darksky/HW_5_TempMatchInSamDay.class
 Pages/Hotels/HW_7_PopularFilters.class
 Tests/Hotels/SearchStays.class
+StepDefinition/Hotels/Project_SignUp.class
+Pages/Hotels/Project_SignIn.class

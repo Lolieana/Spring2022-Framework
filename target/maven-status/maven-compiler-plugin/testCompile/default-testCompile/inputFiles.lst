@@ -5,6 +5,7 @@
 /Users/lolieanabotros/Documents/git/Spring2022-Framework/src/test/java/Pages/Darksky/HW_5_TempsMatchInSameDay.java
 /Users/lolieanabotros/Documents/git/Spring2022-Framework/src/test/java/Helper/Misc.java
 /Users/lolieanabotros/Documents/git/Spring2022-Framework/src/test/java/Pages/Facebook/LoginErrorPage.java
+/Users/lolieanabotros/Documents/git/Spring2022-Framework/src/test/java/Pages/Hotels/Project_SignIn.java
 /Users/lolieanabotros/Documents/git/Spring2022-Framework/src/test/java/Pages/Darksky/HW_5_TimeMachineDates.java
 /Users/lolieanabotros/Documents/git/Spring2022-Framework/src/test/java/Tests/Darksky/HW_5_TimMachineDates.java
 /Users/lolieanabotros/Documents/git/Spring2022-Framework/src/test/java/StepDefinition/Darksky/SearchSD.java
@@ -14,6 +15,7 @@
 /Users/lolieanabotros/Documents/git/Spring2022-Framework/src/test/java/StepDefinition/Facebook/LoginSD.java
 /Users/lolieanabotros/Documents/git/Spring2022-Framework/src/test/java/Pages/Hotels/HW_7_PopularFilters.java
 /Users/lolieanabotros/Documents/git/Spring2022-Framework/src/test/java/Tests/Facebook/login_2.java
+/Users/lolieanabotros/Documents/git/Spring2022-Framework/src/test/java/StepDefinition/Hotels/Project_SignUp.java
 /Users/lolieanabotros/Documents/git/Spring2022-Framework/src/test/java/Tests/Facebook/HW_5_FacebokLinks.java
 /Users/lolieanabotros/Documents/git/Spring2022-Framework/src/test/java/TestRunner.java
 /Users/lolieanabotros/Documents/git/Spring2022-Framework/src/test/java/Pages/Facebook/HW_5_FacebookLinks.java

@@ -3,6 +3,7 @@ package Pages;
 import Helper.Misc;
 import Web.MyDriver;
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
@@ -75,7 +76,7 @@ public class Commands {
 
 
     public String getAttributeValueFromWebElement(By locator, String attribute) {
-        return findWebElement(locator).getText();
+        return findWebElement(locator).getAttribute(attribute);
     }
 
 
@@ -277,6 +278,12 @@ public class Commands {
 
     public void pressEnterButton (By locator) {
         findWebElement(locator).sendKeys(Keys.ENTER);
+    }
+
+    public void doubleClick (By locator ) {
+        Actions action = new Actions(MyDriver.getDriver());
+        action.moveToElement(findWebElement(locator)).build().perform();
+
     }
 
 
