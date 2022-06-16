@@ -51,10 +51,10 @@ public class MyDriver {
        // driver.get("https://www.hotels.com/");
   // }
 
-    @After
-    public static void quitWindows() {
-        driver.quit();
-    }
+   // @After
+  //  public static void quitWindows() {
+     //   driver.quit();
+   // }
 
 
     public static WebDriver getDriver() {

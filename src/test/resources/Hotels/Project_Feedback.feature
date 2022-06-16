@@ -5,7 +5,7 @@ Feature: Feedback
   Background:
     Given I am on Hotels main page
     When  I click header sign in
-    And  I click feedback page
+    And  I click feedback from sign in menu
     And I click submit button
 
     @errorMessage

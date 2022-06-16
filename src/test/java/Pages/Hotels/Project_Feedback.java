@@ -1,5 +1,6 @@
 package Pages.Hotels;
 
+import Helper.Misc;
 import Pages.Commands;
 import org.openqa.selenium.By;
 
@@ -19,7 +20,9 @@ public class Project_Feedback extends Commands {
         switchToSecondWindow();
     }
     public void clickSubmit () {
+
         clickIt(submitFeedbackLocator);
+        Misc.pause(2);
     }
 
     public boolean verifyErrorMessageIsDisplayed () {

@@ -23,6 +23,11 @@ public class Commands {
         return MyDriver.getDriver().findElement(locator);
     }
 
+    // go back local custom method
+    public static void goBack () {
+        MyDriver.getDriver().navigate().back();
+    }
+
     // Create a local method to find WebElement
     public WebElement findWebElementWithWait(By locator) {
         Wait fWait = new FluentWait(MyDriver.getDriver())

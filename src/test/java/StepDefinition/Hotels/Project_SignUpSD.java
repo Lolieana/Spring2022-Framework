@@ -12,7 +12,7 @@ public class Project_SignUpSD {
     String termsWindowHandle;
     String privacyWindowHandle;
 
-    @When("^I signup it is free from sign in menu$")
+    @When("^I click signup it is free from sign in menu$")
     public void clickSignUp () {
         startWindowHandle = signUp.clickSignUpLink();
     }
