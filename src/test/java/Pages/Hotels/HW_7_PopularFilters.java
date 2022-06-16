@@ -36,6 +36,8 @@ public class HW_7_PopularFilters extends Commands {
 
 
 
+
+
     public void clickCheckInBox () {
         clickIt(checkInBoxLocator);
     }

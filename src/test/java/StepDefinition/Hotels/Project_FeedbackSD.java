@@ -11,7 +11,7 @@ public class Project_FeedbackSD {
     Project_Feedback feedback = new Project_Feedback();
 
 
-    @And("^I click feedback page$")
+    @And("^I click feedback from sign in menu$")
     public void clickFeedback () {
         feedback.clickFeedback();
         Misc.pause(2);
