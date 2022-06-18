@@ -2,9 +2,9 @@
 Feature: deals page
 
   Background:
-    Given I am on Hotels main page
-    When  I click more travel
-    And  I click on deals
+    Given I am on Hotels deals page
+   # When  I click more travel
+   # And  I click on deals
 
 
     @manageYourBookingAnyWhereLink

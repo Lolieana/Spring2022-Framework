@@ -3,21 +3,28 @@ package StepDefinition.Hotels;
 import Helper.Misc;
 import Pages.Commands;
 import Pages.Hotels.Sprint2_TC26;
+import Web.MyDriver;
 import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
 public class Sprint2_TC26_SD {
     Sprint2_TC26 links = new Sprint2_TC26();
 
-    @And("^I click more travel$")
-    public void clickOnTravel () {
-        links.clickOnMoreTravelBox();
+    @Given("^I am on Hotels deals page$")
+    public void lauchHotelPage () {
+        MyDriver.launchUrlOnNewWindowWithWait("https://www.hotels.com/deals/");
     }
 
-    @And("^I click on deals$")
-    public void pickDeals () {
-        links.clickOnDeals();
-    }
+    //@And("^I click more travel$")
+   // public void clickOnTravel () {
+      //  links.clickOnMoreTravelBox();
+   // }
+
+   // @And("^I click on deals$")
+   // public void pickDeals () {
+    //    links.clickOnDeals();
+   // }
     @Then("^verify manage your booking link is displayed$")
     public void verifyManageYourBookingDisplayed () {
         Commands.checkTrue(links.checkManageYourBookingDisplayed(), " not display");

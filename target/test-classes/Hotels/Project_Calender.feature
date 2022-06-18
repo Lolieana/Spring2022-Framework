@@ -13,7 +13,7 @@ Feature: Calender
 
     @checkOutDisabledDates
   Scenario: Verify past dates in checkout box are disabled for the user in current month
-      When  I click checkout box
+     # When  I click checkout box
       Then verify dates are disabled
 
     @leftArrow
