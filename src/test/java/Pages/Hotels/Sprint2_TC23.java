@@ -65,7 +65,7 @@ public class Sprint2_TC23 extends Commands {
     }
     public void clickStarRating (String starNum) {
 
-        clickIt(By.xpath("//label[@aria-label='" + starNum +  "★.']"));
+        clickFromActions(By.xpath("//label[@aria-label='" + starNum +  "★.']"));
        // Misc.pause(2);
         MyDriver.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
