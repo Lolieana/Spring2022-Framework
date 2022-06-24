@@ -11,14 +11,17 @@ public class Project_CalenderSD {
 
     @When("^I click checkin box$")
     public void clickCheckInTable () {
+
         cal.clickCheckInTable();
+        Misc.pause(2);
+        cal.clickPreviousMonthArrow();
     }
 
-    @When("^I click checkout box$")
-    public void clickCkecoutTable () {
-        cal.clickCheckOutTable();
+   // @When("^I click checkout box$")
+   // public void clickCkecoutTable () {
+    //    cal.clickCheckOutTable();
 
-    }
+   // }
 
     @When("^verify arrow is disabled$")
     public void verifyLeftArrowIsDisabled () {

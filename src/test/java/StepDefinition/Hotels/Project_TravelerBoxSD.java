@@ -15,7 +15,7 @@ public class Project_TravelerBoxSD {
     }
     @Then("^I increase adults number$")
     public void addAdults () {
-       for (int i=1; i<5; i++) {
+       for (int i=1; i<= 6-2; i++) {
            gn.clickAdultIncreaseBtn();
 
        }
@@ -43,12 +43,12 @@ public class Project_TravelerBoxSD {
        int numOfAdultInInt =  Integer.valueOf(gn.getAdultNumber());
         int numOfChildrenInInt =  Integer.valueOf(gn.getChildrenNumber());
         int totalNumber = numOfAdultInInt + numOfChildrenInInt;
-        System.out.println("*******" + totalNumber);
 
-        String textAfterSplit = gn.getNumberOfGuestsOnHomePage().split(" ")[2];
-        System.out.println("********* " + textAfterSplit);
+        String textAfterSplit = gn.getNumberOfGuestsOnHomePage().split(" ")[0];
         int totalOnHomePage = Integer.valueOf(textAfterSplit);
         Commands.checkEquals(totalNumber,totalOnHomePage,"Sum of adult and children in Traveler box are not matching as selected.");
+
+
 
 
     }

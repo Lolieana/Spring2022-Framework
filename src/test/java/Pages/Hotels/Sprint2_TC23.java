@@ -2,10 +2,12 @@ package Pages.Hotels;
 
 import Helper.Misc;
 import Pages.Commands;
+import Web.MyDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class Sprint2_TC23 extends Commands {
 
@@ -56,10 +58,16 @@ public class Sprint2_TC23 extends Commands {
         clickIt(doneButton);
     }
     public void clickOnSearchBtn () {
+
         clickIt(searchButton);
+       // Misc.pause(2);
+        MyDriver.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
     public void clickStarRating (String starNum) {
-        clickIt(By.xpath("//label[@aria-label='" + starNum +  "★.']"));
+
+        clickFromActions(By.xpath("//label[@aria-label='" + starNum +  "★.']"));
+       // Misc.pause(2);
+        MyDriver.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
     public void selectSortOption (String option) {
         selectByVisibleText(sortDropdownLocator, option);

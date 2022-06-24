@@ -285,9 +285,9 @@ public class Commands {
         findWebElement(locator).sendKeys(Keys.ENTER);
     }
 
-    public void doubleClick (By locator ) {
+    public void clickFromActions (By locator ) {
         Actions action = new Actions(MyDriver.getDriver());
-        action.moveToElement(findWebElement(locator)).build().perform();
+        action.click(findWebElement(locator)).build().perform();
 
     }
 

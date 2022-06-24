@@ -6,8 +6,11 @@ import org.openqa.selenium.By;
 
 public class Sprint2_TC26 extends Commands {
 
-    By moreTravelBtnLocator = By.xpath("//div[text()='More travel']");
-    By firstSelectLocator = By.xpath(" //a[@href='/hotel-deals/']");
+   // By moreTravelBtnLocator = By.xpath("//div[text()='More travel']");
+   // By firstSelectLocator = By.xpath(" //a[@href='/hotel-deals/']");
+    //By firstSelectLocator = By.xpath("//a[@href='/lp/b/deals']");
+
+
 
     // manage your booking link locators
     By manageYourBookingLocator = By.xpath("(//div[@class='resp-row resp-section ']//a)[1]");
@@ -25,13 +28,14 @@ public class Sprint2_TC26 extends Commands {
 
 
 
-    public void clickOnMoreTravelBox () {
-        clickIt(moreTravelBtnLocator);
-    }
-    public void clickOnDeals () {
-        clickIt(firstSelectLocator);
-        Misc.pause(2);
-    }
+
+    //public void clickOnMoreTravelBox () {
+      //  clickIt(moreTravelBtnLocator);
+   // }
+   // public void clickOnDeals () {
+     //   clickIt(firstSelectLocator);
+      //  Misc.pause(2);
+   // }
     public boolean checkManageYourBookingDisplayed () {
         return isElementDisplayed(manageYourBookingLocator);
     }
